@@ -3,117 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The One's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="matrix-background"></div>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#articles">Articles</a></li>
-                <li><a href="#art">Art</a></li>
                 <li><a href="#music">Music</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#art">Art</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#fitness">Fitness</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1 class="glitch" data-text="Welcome to the Matrix">Welcome to the Matrix</h1>
-            <p class="subtitle">Explore the digital realm of <span class="highlight">Your Name</span></p>
-        </section>
-
-        <section id="about">
-            <h2 class="section-title">About The One</h2>
-            <div class="content-wrapper">
-                <img src="placeholder-profile.jpg" alt="Your Name" class="profile-image">
-                <p>Enter a mind-bending description of yourself here. Are you The One? A program? Or just someone exploring the vast digital landscape? Your journey begins here.</p>
-            </div>
+        <section id="home">
+            <h1>Welcome to My Personal Website</h1>
+            <p>Hi, I'm [Your Name]. This is where I share my thoughts, creations, and passions.</p>
         </section>
 
         <section id="articles">
-            <h2 class="section-title">Decoded Transmissions</h2>
-            <div class="article-grid">
-                <article class="article-card">
-                    <h3>The Illusion of Choice</h3>
-                    <p>A deep dive into the philosophical implications of free will in a simulated reality.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
-                <article class="article-card">
-                    <h3>Breaking the Code</h3>
-                    <p>Exploring the boundaries between perception and reality in the digital age.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
-                <article class="article-card">
-                    <h3>Digital Enlightenment</h3>
-                    <p>How understanding technology can lead to a higher state of consciousness.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="art">
-            <h2 class="section-title">Virtual Canvas</h2>
-            <div class="art-gallery">
-                <figure class="art-item">
-                    <img src="placeholder-art-1.jpg" alt="Artwork 1">
-                    <figcaption>Glitch in the System</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="placeholder-art-2.jpg" alt="Artwork 2">
-                    <figcaption>Digital Dreams</figcaption>
-                </figure>
-                <figure class="art-item">
-                    <img src="placeholder-art-3.jpg" alt="Artwork 3">
-                    <figcaption>Neo-Renaissance</figcaption>
-                </figure>
-            </div>
+            <h2>Articles</h2>
+            <article>
+                <h3>Article Title 1</h3>
+                <p>Brief description or excerpt of the article...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Article Title 2</h3>
+                <p>Brief description or excerpt of the article...</p>
+                <a href="#">Read More</a>
+            </article>
+            <!-- Add more articles as needed -->
         </section>
 
         <section id="music">
-            <h2 class="section-title">Sonic Frequencies</h2>
+            <h2>Music</h2>
             <div class="music-player">
-                <div class="track">
-                    <h3>Binary Beats</h3>
-                    <audio controls>
-                        <source src="placeholder-track-1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="track">
-                    <h3>Quantum Harmonies</h3>
-                    <audio controls>
-                        <source src="placeholder-track-2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+                <h3>Song Title 1</h3>
+                <audio controls>
+                    <source src="path_to_your_song.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- Add more audio players as needed -->
+        </section>
+
+        <section id="art">
+            <h2>Artwork</h2>
+            <div class="art-gallery">
+                <img src="path_to_artwork1.jpg" alt="Artwork 1">
+                <img src="path_to_artwork2.jpg" alt="Artwork 2">
+                <!-- Add more artwork images as needed -->
             </div>
         </section>
 
-        <section id="contact">
-            <h2 class="section-title">Establish Connection</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Handle" required>
-                <input type="email" placeholder="Access Node (Email)" required>
-                <textarea placeholder="Transmit Your Message" required></textarea>
-                <button type="submit" class="submit-btn">Send Transmission</button>
-            </form>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project...</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repository</a>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project...</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repository</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="fitness">
+            <h2>Fitness</h2>
+            <p>Here's where I share my fitness journey, tips, and progress.</p>
+            <!-- Add more fitness content as needed -->
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 The Matrix. All realities reserved.</p>
-        <div class="social-links">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
