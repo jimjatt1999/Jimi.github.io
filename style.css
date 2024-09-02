@@ -97,29 +97,6 @@ footer {
     padding-top: 1rem;
 }
 
-/* Styles for the dropdown arrow */
-.arrow {
-    font-size: 14px;
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-}
-
-.dropdown-content {
-    cursor: pointer;
-    padding: 10px 0;
-}
-
-.dropdown-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Rotate the arrow when dropdown is active */
-.dropdown-content.active .arrow {
-    transform: rotate(180deg);
-}
-
 @media (max-width: 600px) {
     body {
         padding: 10px;
