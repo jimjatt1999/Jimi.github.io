@@ -69,6 +69,37 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Art Gallery Styles */
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.art-piece {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.art-piece:hover {
+    transform: translateY(-5px);
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.art-piece figcaption {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 .essay-preview {
     background-color: #fff;
     padding: 1rem;
@@ -103,5 +134,9 @@ footer {
     
     nav ul {
         flex-direction: column;
+    }
+    
+    .art-gallery {
+        grid-template-columns: 1fr;
     }
 }
