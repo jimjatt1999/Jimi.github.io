@@ -1,107 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-
 :root {
-    --font-family: "JetBrains Mono", monospace;
-    --line-height: 1.5;
-    --border-thickness: 2px;
+    --bg-color: #f4f4f4;
     --text-color: #333;
-    --background-color: #f4f4f4;
-    --accent-color: #007bff;
-    font-family: var(--font-family);
-    font-size: 16px;
+    --accent-color: #3498db;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 800px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    line-height: var(--line-height);
-    background: var(--background-color);
-    color: var(--text-color);
 }
 
 header {
     margin-bottom: 2rem;
-    border-bottom: var(--border-thickness) solid var(--text-color);
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 1rem;
 }
 
-header h1 {
-    margin: 0;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-section, .greeting, .contact-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.greeting {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-section {
+    text-align: right;
+}
+
+.contact-section a {
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #2980b9;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+#toc-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+nav ul li {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    margin: 5px;
 }
 
-h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
+nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-    font-size: 1.5rem;
-    border-bottom: var(--border-thickness) solid var(--text-color);
-    padding-bottom: 0.5rem;
-}
-
-a {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: var(--accent-color);
-    text-decoration: none;
-    border-bottom: 1px solid var(--accent-color);
-}
-
-a:hover {
-    color: var(--text-color);
-    border-bottom: 2px solid var(--text-color);
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-.essay-preview {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.essay-preview:hover {
-    transform: translateY(-5px);
-}
-
-.essay-preview h3 {
-    margin-top: 0;
-}
-
-.essay-preview p {
-    margin-bottom: 0;
 }
 
 footer {
     margin-top: 2rem;
     text-align: center;
-    border-top: var(--border-thickness) solid var(--text-color);
-    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .title-section, .greeting, .contact-section {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
     }
     
     nav ul {
         flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+        margin: 5px 0;
     }
 }
