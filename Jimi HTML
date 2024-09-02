@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Jimi's Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,70 +22,64 @@
 
     <main>
         <section id="home">
-            <h1>Welcome to My Personal Website</h1>
-            <p>Hi, I'm [Your Name]. This is where I share my thoughts, creations, and passions.</p>
+            <h1>Welcome to Jimi's World</h1>
+            <p>Hi, I'm Jimi. This is where I share my thoughts, creations, and passions.</p>
         </section>
 
         <section id="articles">
             <h2>Articles</h2>
             <article>
-                <h3>Article Title 1</h3>
-                <p>Brief description or excerpt of the article...</p>
+                <h3>My Thoughts on Music</h3>
+                <p>A brief exploration of how music shapes our lives and experiences...</p>
                 <a href="#">Read More</a>
             </article>
             <article>
-                <h3>Article Title 2</h3>
-                <p>Brief description or excerpt of the article...</p>
+                <h3>The Art of Creativity</h3>
+                <p>Discussing the process of creative thinking and its impact on personal growth...</p>
                 <a href="#">Read More</a>
             </article>
-            <!-- Add more articles as needed -->
         </section>
 
         <section id="music">
             <h2>Music</h2>
             <div class="music-player">
-                <h3>Song Title 1</h3>
+                <h3>My Latest Track</h3>
                 <audio controls>
                     <source src="path_to_your_song.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <!-- Add more audio players as needed -->
         </section>
 
         <section id="art">
             <h2>Artwork</h2>
             <div class="art-gallery">
-                <img src="path_to_artwork1.jpg" alt="Artwork 1">
-                <img src="path_to_artwork2.jpg" alt="Artwork 2">
-                <!-- Add more artwork images as needed -->
+                <img src="path_to_artwork1.jpg" alt="Abstract Painting">
+                <img src="path_to_artwork2.jpg" alt="Digital Art">
             </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Brief description of the project...</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repository</a>
+                <h3>Personal Website</h3>
+                <p>A showcase of my skills in web development and design.</p>
+                <a href="https://github.com/jimjatt1999/jimjatt1999.github.io" target="_blank">GitHub Repository</a>
             </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Brief description of the project...</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repository</a>
-            </div>
-            <!-- Add more projects as needed -->
         </section>
 
         <section id="fitness">
             <h2>Fitness</h2>
-            <p>Here's where I share my fitness journey, tips, and progress.</p>
-            <!-- Add more fitness content as needed -->
+            <p>Tracking my fitness journey and sharing tips for a healthy lifestyle.</p>
+            <ul>
+                <li>Weekly running goal: 20km</li>
+                <li>Current focus: Building core strength</li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Jimi. All rights reserved.</p>
     </footer>
 </body>
 </html>
