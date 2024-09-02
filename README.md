@@ -1,1 +1,2 @@
-# jimjatt1999.github.io
+# Jimi.github.io
+just working on my personal website
