@@ -8,34 +8,45 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#art">Art</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#fitness">Fitness</a></li>
-            </ul>
-        </nav>
+        <table>
+            <tr>
+                <td>
+                    <h1 id="jimi" class="title">Jimi</h1>
+                    <p class="subtitle">Creator, Thinker, Artist</p>
+                </td>
+                <td>Hello!</td>
+                <td>
+                    Contact<br>
+                    <a href="https://github.com/jimjatt1999">github</a><br>
+                    <a href="https://twitter.com/jimjatt1999">twitter</a><br>
+                    <a href="mailto:jimi@example.com">email</a>
+                </td>
+            </tr>
+        </table>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to Jimi's World</h1>
-            <p>Hi, I'm Jimi. This is where I share my thoughts, creations, and passions.</p>
-        </section>
+    <nav>
+        <h2 id="toc-title">Contents</h2>
+        <ul>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#art">Art</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#fitness">Fitness</a></li>
+        </ul>
+    </nav>
 
+    <main>
         <section id="articles">
             <h2>Articles</h2>
             <article>
-                <h3>My Thoughts on Music</h3>
-                <p>A brief exploration of how music shapes our lives and experiences...</p>
+                <h3>Thought Piece 1</h3>
+                <p>A brief exploration of a topic that interests me...</p>
                 <a href="#">Read More</a>
             </article>
             <article>
-                <h3>The Art of Creativity</h3>
-                <p>Discussing the process of creative thinking and its impact on personal growth...</p>
+                <h3>Essay on Creativity</h3>
+                <p>Discussing the process of creative thinking and its impact...</p>
                 <a href="#">Read More</a>
             </article>
         </section>
@@ -54,23 +65,29 @@
         <section id="art">
             <h2>Artwork</h2>
             <div class="art-gallery">
-                <img src="path_to_artwork1.jpg" alt="Abstract Painting">
-                <img src="path_to_artwork2.jpg" alt="Digital Art">
+                <figure>
+                    <img src="path_to_artwork1.jpg" alt="Artwork 1">
+                    <figcaption>Title of Artwork 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="path_to_artwork2.jpg" alt="Artwork 2">
+                    <figcaption>Title of Artwork 2</figcaption>
+                </figure>
             </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Personal Website</h3>
-                <p>A showcase of my skills in web development and design.</p>
-                <a href="https://github.com/jimjatt1999/jimjatt1999.github.io" target="_blank">GitHub Repository</a>
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project...</p>
+                <a href="https://github.com/jimjatt1999/project1" target="_blank">GitHub Repository</a>
             </div>
         </section>
 
         <section id="fitness">
             <h2>Fitness</h2>
-            <p>Tracking my fitness journey and sharing tips for a healthy lifestyle.</p>
+            <p>Here's where I share my fitness journey, tips, and progress.</p>
             <ul>
                 <li>Weekly running goal: 20km</li>
                 <li>Current focus: Building core strength</li>
