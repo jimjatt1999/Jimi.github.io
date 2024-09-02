@@ -72,11 +72,12 @@ section {
 /* Art Gallery Styles */
 .art-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
-.art-piece {
+.art-gallery figure {
+    margin: 0;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -84,22 +85,24 @@ section {
     transition: transform 0.3s ease;
 }
 
-.art-piece:hover {
+.art-gallery figure:hover {
     transform: translateY(-5px);
 }
 
-.art-piece img {
+.art-gallery img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     display: block;
 }
 
-.art-piece figcaption {
+.art-gallery figcaption {
     padding: 0.5rem;
     text-align: center;
     font-size: 0.9rem;
 }
 
+/* Essay Preview Styles */
 .essay-preview {
     background-color: #fff;
     padding: 1rem;
@@ -120,6 +123,46 @@ section {
     margin-bottom: 0;
 }
 
+/* Music List Styles */
+.music-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.music-list li {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.music-list h4 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+.music-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.music-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.music-links a:hover {
+    background-color: #0056b3;
+}
+
 footer {
     margin-top: 2rem;
     text-align: center;
@@ -137,6 +180,10 @@ footer {
     }
     
     .art-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .art-gallery img {
+        height: 150px;
     }
 }
