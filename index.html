@@ -46,7 +46,20 @@
         
         <footer>
             <p>© 2024 Jimi. All rights reserved.</p>
+            <div id="visitor-counter">
+                <p>Page Visits: <span id="visit-count">0</span></p>
+            </div>
         </footer>
     </div>
+
+    <script>
+        // Visit counter script
+        document.addEventListener('DOMContentLoaded', function() {
+            let visits = localStorage.getItem('page_visits');
+            visits = visits ? parseInt(visits) + 1 : 1;
+            localStorage.setItem('page_visits', visits);
+            document.getElementById('visit-count').textContent = visits;
+        });
+    </script>
 </body>
 </html>
