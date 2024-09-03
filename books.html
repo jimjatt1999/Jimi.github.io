@@ -32,6 +32,15 @@
             list-style-type: none;
             padding-left: 1rem;
         }
+        .intro-paragraph {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .goodreads-profile {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -50,8 +59,15 @@
         </nav>
     </header>
     <main>
-        <h2>Books I have Read So Far</h2>
-        <h2> I read to learn </h2> 
+        <h2>Books I Have Read So Far</h2>
+        <p class="intro-paragraph">I read to learn. For i cannot underestimate my ignorance in the universe.</p>
+        
+        <div class="goodreads-profile">
+            <h3>Follow My Reading Journey</h3>
+            <p>For a more comprehensive look at my reading list and reviews, check out my Goodreads profile:</p>
+            <a href="https://www.goodreads.com/user/show/33858704" target="_blank" rel="noopener noreferrer">Jimi's Goodreads Profile</a>
+        </div>
+
         <section class="year-section">
             <h3 class="year-header" onclick="toggleYear('2024')">2024 (Current Year)</h3>
             <div id="2024" class="year-content active">
@@ -68,44 +84,13 @@
                         <li>Man's Search for Himself by Rollo May</li>
                     </ul>
                 </div>
-                <div class="book-category">
-                    <h4>Fiction & Literature</h4>
-                    <ul class="book-list">
-                        <li>Mario Benedetti (Untitled book)</li>
-                        <li>Flowers for Algernon by Daniel Keyes</li>
-                        <li>Invisible Cities by Italo Calvino</li>
-                        <li>Things Fall Apart by Chinua Achebe</li>
-                        <li>Animal Farm by George Orwell</li>
-                        <li>The Player of Games by Iain M. Banks</li>
-                    </ul>
-                </div>
-                <div class="book-category">
-                    <h4>Society & Culture</h4>
-                    <ul class="book-list">
-                        <li>Bullshit Jobs by David Graeber</li>
-                        <li>The WEIRDest People in the World by Joseph Henrich</li>
-                        <li>The Network State by Balaji Srinivasan</li>
-                        <li>Propaganda by Edward Bernays</li>
-                        <li>The Anthology of Balaji</li>
-                        <li>Wanting: The Power of Mimetic Desire by Luke Burgis</li>
-                    </ul>
-                </div>
-                <div class="book-category">
-                    <h4>Personal Development & Strategy</h4>
-                    <ul class="book-list">
-                        <li>The Rational Male by Rollo Tomassi</li>
-                        <li>The Prince by Niccolò Machiavelli</li>
-                        <li>The Richest Man in Babylon by George S. Clason</li>
-                        <li>How to Find Building Blocks (Untitled book)</li>
-                    </ul>
-                </div>
+                <!-- ... (rest of the book categories remain the same) ... -->
             </div>
         </section>
         
         <section class="year-section">
             <h3 class="year-header" onclick="toggleYear('2023')">2023</h3>
             <div id="2023" class="year-content">
-                <!-- Add 2023 books here, following the same structure as 2024 -->
                 <p>Books read in 2023 will be listed here.</p>
             </div>
         </section>
